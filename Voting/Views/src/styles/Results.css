@@ -1,0 +1,188 @@
+.results_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: #f5f5ea;
+  border-radius: 25px;
+  color: black;
+}
+
+.results_component .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 100%;
+}
+
+.results_component .left_side .results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #dcdcd1;
+  width: 90%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.results_component .left_side .results .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.results_component .left_side .results .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #c8c8bd;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 5px solid #dcdcd1;
+}
+
+.results_component .left_side .results .fields th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  margin-left: 15px;
+}
+
+.results_component .left_side .results .fields th:not(:last-of-type) {
+  border-right: 5px solid #dcdcd1;
+}
+
+.results_component .left_side .results .fields .field_participant {
+  width: 35%;
+}
+
+.results_component .left_side .results .fields .field_birth_date {
+  width: 25%;
+}
+
+.results_component .left_side .results .fields .field_votes {
+  width: 15%;
+}
+
+.results_component .left_side .results .fields .field_average_mark {
+  width: 25%;
+}
+
+.results_component .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.results_component .right_side select {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 90%;
+  height: 45px;
+}
+
+.results_component .right_side button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 275px;
+  height: 50px;
+  color: black;
+  background: #a8db35;
+}
+
+.results_component .right_side button:hover {
+  background: #b6f02e;
+}
+
+.results_component .right_side button:disabled {
+  cursor: unset;
+  background: #46465a;
+}

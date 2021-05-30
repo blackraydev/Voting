@@ -1,0 +1,13 @@
+.anim-layout-appear {
+    transition: transform 0.75s, opacity 1s;
+    opacity: 0;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    will-change: transform opacity;
+}
+
+.anim-layout-appear-active {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+}

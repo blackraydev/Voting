@@ -1,0 +1,106 @@
+.modal_vote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  color: black;
+}
+
+.modal_vote .window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 250px;
+  padding: 25px;
+  z-index: 2;
+  border-radius: 25px;
+  background: #969b90;
+}
+
+.modal_vote .window h2 {
+  margin-top: 15px;
+}
+
+.modal_vote .window .buttons_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25%;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.modal_vote .window .buttons_holder button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 200px;
+  height: 60px;
+  color: black;
+  background: #a8db35;
+}
+
+.modal_vote .window .buttons_holder button:hover {
+  background: #b6f02e;
+}
+
+.modal_vote .window .buttons_holder button:disabled {
+  cursor: unset;
+  background: #5f6357;
+}
+
+.modal_vote .window .buttons_holder .cancel {
+  background: #787878;
+}
+
+.modal_vote .window .buttons_holder .cancel:hover {
+  background: #aaaaaa;
+}
+
+.modal_vote .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

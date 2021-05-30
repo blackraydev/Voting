@@ -1,0 +1,179 @@
+@import "../Common/mixins";
+
+.votings_component {
+    @include flex(column, center, flex-start);
+
+    width: 100%;
+    background: rgb(245, 245, 234);
+    border-radius: 25px;
+    color: black;
+
+
+    .top_part {
+        @include flex(row, center, flex-start);
+
+        width: 100%;
+
+        .left_side {
+            @include flex(column, flex-start, center);
+            
+            width: 60%;
+            height: 100%;
+    
+            .votings {
+                @include flex(column, flex-start, center);
+                
+                overflow: hidden;
+                background: rgb(220, 220, 209);
+                width: 90%;
+                height: 80%;
+                margin-top: 25px;
+                border-radius: 15px;
+    
+                .list {
+                    @include flex(column, flex-start, center);
+                    
+                    overflow: scroll;
+                    width: 100%;
+                }
+    
+                .fields {
+                    @include flex(row, flex-start, center);
+                    
+                    transition: .15s ease-out;
+                    width: 100%;
+                    min-height: 50px;
+                    background: rgb(200, 200, 189);
+                    font-weight: 600;
+                    font-size: 20px;
+                    border-bottom: 5px solid rgb(220, 220, 209);
+    
+                    .field_voting_name {
+                        @include flex(row, flex-start, center);
+                        
+                        min-height: 50px;
+                        width: 100%;
+                        max-width: 40%;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        .middle_side {
+            @include flex(column, flex-start, center);
+            
+            width: 35%;
+            height: 100%;
+    
+            .criterias {
+                @include flex(column, flex-start, center);
+                
+                overflow: hidden;
+                background: rgb(220, 220, 209);
+                width: 90%;
+                height: 80%;
+                margin-top: 25px;
+                border-radius: 15px;
+    
+                .list {
+                    @include flex(column, flex-start, center);
+                    
+                    overflow: scroll;
+                    width: 100%;
+                }
+    
+                .fields {
+                    @include flex(row, flex-start, center);
+                    
+                    transition: .15s ease-out;
+                    width: 100%;
+                    min-height: 50px;
+                    background: rgb(200, 200, 189);
+                    font-weight: 600;
+                    font-size: 20px;
+                    border-bottom: 5px solid rgb(220, 220, 209);
+    
+                    .field_criteria {
+                        @include flex(row, flex-start, center);
+                        
+                        min-height: 50px;
+                        width: 100%;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .bottom_part {
+        @include flex(row, center, center);
+
+        margin-top: 35px;
+        width: 100%;
+
+        .right_side {
+            @include flex(row, space-evenly, flex-start);
+            
+            width: 70%;
+
+            .voting_handler {
+                @include flex(column, center, center);
+                
+            }
+    
+            h1 {
+                &:last-of-type {
+                    margin-top: 30px;
+                }
+            }
+    
+            input {
+                margin-top: 30px;
+                padding-left: 15px;
+                border-radius: 35px;
+                font-size: 18px;
+                width: 75%;
+                height: 45px;
+            }
+    
+            button {
+                transition: .15s ease-out;
+                cursor: pointer;
+                margin-top: 30px;
+                border-radius: 25px;
+                font-size: 18px;
+                width: 275px;
+                height: 50px;
+                color: black;
+                background: rgb(168, 219, 53);
+    
+                &:hover {
+                    background: rgb(182, 240, 46);
+                }
+    
+                &:disabled {
+                    cursor: unset;
+                    background: rgb(95, 99, 87);
+                }
+    
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+    
+            .remove_voting {
+                background: rgb(130, 35, 35);
+    
+                &:hover {
+                    background: rgb(200, 35, 35);
+                }
+    
+                &:disabled {
+                    cursor: unset;
+                    background: rgb(95, 99, 87);
+                }
+            }
+        }
+    }
+}

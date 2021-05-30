@@ -1,0 +1,100 @@
+@import "../Common/mixins";
+
+.vote_component {
+    @include flex(column, flex-start, center);
+
+    width: 100%;
+    background: rgb(245, 245, 234);
+    border-radius: 25px;
+    color: black;
+
+    .top_part {
+        @include flex(column, flex-start, center);
+        
+        width: 100%;
+        min-height: 300px;
+
+        .vote {
+            @include flex(column, flex-start, center);
+            
+            overflow: hidden;
+            background: rgb(220, 220, 209);
+            width: 90%;
+            min-height: 300px;
+            margin-top: 25px;
+            border-radius: 15px;
+    
+            .list {
+                @include flex(column, flex-start, center);
+                
+                overflow: scroll;
+                width: 100%;
+            }
+    
+            .fields {
+                @include flex(row, flex-start, center);
+                
+                transition: .15s ease-out;
+                width: 100%;
+                min-height: 50px;
+                background: rgb(200, 200, 189);
+                font-weight: 600;
+                font-size: 18px;
+                border-bottom: 5px solid rgb(220, 220, 209);
+    
+                div {
+                    @include flex(row, flex-start, center);
+    
+                    min-height: 50px;
+                    margin-left: 15px;
+    
+                    &:not(:last-of-type) {
+                        border-right: 5px solid rgb(220, 220, 209);
+                    }
+                }
+    
+                .field_participant {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    .bottom_part {
+        @include flex(column, flex-start, center);
+        
+        margin-top: 35px;
+        margin-bottom: 35px;
+        width: 100%;
+
+        select {
+            margin-top: 20px;
+            padding-left: 15px;
+            border-radius: 35px;
+            font-size: 18px;
+            width: 300px;
+            height: 45px;
+        }
+
+        button {
+            transition: .15s ease-out;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            width: 200px;
+            height: 50px;
+            color: black;
+            background: rgb(168, 219, 53);
+
+            &:hover {
+                background: rgb(182, 240, 46);
+            }
+
+            &:disabled {
+                cursor: unset;
+                background: rgb(95, 99, 87);
+            }
+        }
+    }
+}

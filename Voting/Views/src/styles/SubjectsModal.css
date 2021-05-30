@@ -1,0 +1,156 @@
+.modal_subjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.modal_subjects .window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 300px;
+  padding: 25px;
+  z-index: 2;
+  border-radius: 25px;
+  background: #2d353b;
+}
+
+.modal_subjects .window .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.modal_subjects .window .inputs .input_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding-left: 22.5%;
+}
+
+.modal_subjects .window .inputs .input_holder label {
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.modal_subjects .window .inputs .input_holder label:not(:first-of-type) {
+  margin-top: 15px;
+}
+
+.modal_subjects .window .inputs input {
+  margin-top: 10px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 75%;
+  height: 45px;
+}
+
+.modal_subjects .window .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25%;
+  margin-bottom: 25px;
+}
+
+.modal_subjects .window .buttons button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 200px;
+  height: 60px;
+  color: white;
+  background: #d8573d;
+}
+
+.modal_subjects .window .buttons button:hover {
+  background: #ee3814;
+}
+
+.modal_subjects .window .buttons button:disabled {
+  cursor: unset;
+  color: #828296;
+  background: #46465a;
+}
+
+.modal_subjects .window .buttons .cancel {
+  background: #787878;
+}
+
+.modal_subjects .window .buttons .cancel:hover {
+  background: #aaaaaa;
+}
+
+.modal_subjects .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

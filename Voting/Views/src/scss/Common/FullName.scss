@@ -1,0 +1,8 @@
+@import "./mixins";
+
+.fullName_component {
+    @include flex(row, center, center);
+
+    height: 50px;
+    width: 100%;
+}

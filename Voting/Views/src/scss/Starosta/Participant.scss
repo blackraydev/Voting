@@ -1,0 +1,44 @@
+@import "../Common/mixins";
+
+.participant {
+    @include flex(row, flex-start, center);
+
+    font-size: 16px;
+    font-weight: 400;
+    transition: .15s ease-out;
+    cursor: pointer;
+    width: 100%;
+    min-height: 50px;
+    background: rgb(200, 200, 189);
+
+    &:not(:first-of-type) {
+        margin-top: 5px;
+    }
+
+    &.active {
+        background: rgb(156, 156, 146);
+
+        &:hover {
+            background: rgb(156, 156, 146);
+        }
+    }
+
+    &:hover {
+        background: rgb(184, 184, 174);
+    }
+
+    div {
+        @include flex(row, flex-start, center);
+
+        min-height: 50px;
+        margin-left: 15px;
+
+        &:not(:last-of-type) {
+            border-right: 5px solid rgb(220, 220, 209);
+        }
+    }
+
+    .existing_participant {
+        width: 65%;
+    }
+}

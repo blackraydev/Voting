@@ -1,0 +1,45 @@
+@import "./mixins";
+
+.navbar {
+    @include flex(row, center, center);
+
+    height: 90px;
+
+    .left_side {
+        @include flex(row, flex-start, center);
+        width: 75%;
+    }
+
+    .right_side {
+        @include flex(row, flex-end, center);
+    }
+
+    a {
+        border-radius: 25px;
+        transition: .15s ease-out;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        margin-right: 40px;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(168, 219, 53);
+        }
+    }
+
+    .link {
+        @include flex(row, center, center);
+
+        transition: .15s ease-out;
+        border-radius: 25px;
+        width: 165px;
+        height: 45px;
+        font-size: 20px;
+
+        &.active {
+            color: black;
+            background: rgb(182, 240, 46);
+        }
+    }
+}

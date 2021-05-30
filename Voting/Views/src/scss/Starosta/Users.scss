@@ -1,0 +1,147 @@
+@import "../Common/mixins";
+
+.users_component {
+    @include flex(row, center, flex-start);
+
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 245, 234);
+    border-radius: 25px;
+    color: black;
+
+    .left_side {
+        @include flex(column, flex-start, center);
+        
+        width: 80%;
+        height: 100%;
+
+        .users {
+            @include flex(column, flex-start, center);
+            
+            overflow: hidden;
+            background: rgb(220, 220, 209);
+            width: 95%;
+            height: 80%;
+            margin-top: 25px;
+            border-radius: 15px;
+
+            .list {
+                @include flex(column, flex-start, center);
+                
+                overflow: scroll;
+                width: 100%;
+            }
+
+            .fields {
+                @include flex(row, flex-start, center);
+                
+                transition: .15s ease-out;
+                width: 100%;
+                min-height: 50px;
+                background: rgb(200, 200, 189);
+                font-weight: 600;
+                font-size: 16px;
+                border-bottom: 5px solid rgb(220, 220, 209);
+
+                div {
+                    @include flex(row, flex-start, center);
+                    
+                    min-height: 50px;
+                    margin-left: 15px;
+
+                    &:not(:last-of-type) {
+                        border-right: 5px solid rgb(220, 220, 209);
+                    }
+                }
+
+                .field_role {
+                    width: 10%;
+                }
+
+                .field_fio {
+                    width: 30%;
+                }
+
+                .field_birth_date {
+                    width: 15%;
+                }
+
+                .field_login {
+                    width: 14%;
+                }
+
+                .field_password {
+                    width: 14%;
+                }
+
+                .field_sex {
+                    width: 5%;
+                }
+
+                .field_married {
+                    width: 15%;
+                }
+            }
+        }
+    }
+
+    .right_side {
+        @include flex(column, flex-start, center);
+        
+        text-align: center;
+        padding-bottom: 25px;
+        width: 20%;
+
+        select {
+            margin-top: 20px;
+            padding-left: 15px;
+            border-radius: 35px;
+            font-size: 18px;
+            width: 90%;
+            height: 45px;
+        }
+
+        input {
+            margin-top: 30px;
+            padding-left: 15px;
+            border-radius: 35px;
+            font-size: 18px;
+            width: 85%;
+            height: 45px;
+        }
+
+        button {
+            transition: .15s ease-out;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            width: 265px;
+            height: 50px;
+            color: black;
+            background: rgb(168, 219, 53);
+
+            &:hover {
+                background: rgb(182, 240, 46);
+            }
+
+            &:disabled {
+                cursor: unset;
+                background: rgb(95, 99, 87);
+            }
+        }
+
+        .remove_user {
+            background: rgb(130, 35, 35);
+
+            &:hover {
+                background: rgb(200, 35, 35);
+            }
+
+            &:disabled {
+                cursor: unset;
+                background: rgb(95, 99, 87);
+            }
+        }
+    }
+}

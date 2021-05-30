@@ -1,0 +1,113 @@
+@import "../Common/mixins";
+
+.modal_users {
+    @include flex(row, center, center);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.5);
+    z-index: 100;
+
+    .window {
+        @include flex(column, flex-start, center);
+        
+        width: 600px;
+        height: 670px;
+        padding: 25px;
+        z-index: 2;
+        border-radius: 25px;
+        background: rgb(150, 155, 144);
+
+        .inputs {
+            @include flex(column, space-evenly, center);
+            
+            width: 100%;
+            height: 90%;
+
+            .input_holder {
+                @include flex(column, center, flex-start);
+                
+                width: 100%;
+                padding-left: 22.5%;
+
+                label {
+                    margin-bottom: 5px;
+                    padding-left: 15px;
+                    font-weight: 500;
+                    font-size: 18px;
+
+                    &:not(:first-of-type) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            select {
+                margin-bottom: 15px;
+                margin-top: 5px;
+                padding-left: 15px; 
+                border-radius: 35px;
+                font-size: 18px;
+                width: 77%;
+                height: 45px;
+            }
+
+            input {
+                margin-bottom: 15px;
+                margin-top: 5px;
+                padding-left: 15px; 
+                border-radius: 35px;
+                font-size: 18px;
+                width: 75%;
+                height: 45px;
+            }
+        }
+
+        .buttons {
+            @include flex(row, space-evenly, center);
+            
+            width: 100%;
+            height: 10%;
+            margin-bottom: 25px;
+
+            button {
+                transition: .15s ease-out;
+                cursor: pointer;
+                margin-top: 30px;
+                border-radius: 25px;
+                font-size: 18px;
+                width: 200px;
+                height: 60px;
+                color: white;
+                background: rgb(168, 219, 53);
+                
+                &:hover {
+                    background: rgb(182, 240, 46);
+                }
+
+                &:disabled {
+                    cursor: unset;
+                    background: rgb(95, 99, 87);
+                }
+            }
+
+            .cancel {
+                background: rgb(120, 120, 120);
+
+                &:hover {
+                    background: rgb(170, 170, 170);
+                }
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}

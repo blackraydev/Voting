@@ -1,0 +1,224 @@
+.users_component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: #f5f5ea;
+  border-radius: 25px;
+  color: black;
+}
+
+.users_component .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.users_component .left_side .users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background: #dcdcd1;
+  width: 95%;
+  height: 80%;
+  margin-top: 25px;
+  border-radius: 15px;
+}
+
+.users_component .left_side .users .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+  width: 100%;
+}
+
+.users_component .left_side .users .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  width: 100%;
+  min-height: 50px;
+  background: #c8c8bd;
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 5px solid #dcdcd1;
+}
+
+.users_component .left_side .users .fields div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  margin-left: 15px;
+}
+
+.users_component .left_side .users .fields div:not(:last-of-type) {
+  border-right: 5px solid #dcdcd1;
+}
+
+.users_component .left_side .users .fields .field_role {
+  width: 10%;
+}
+
+.users_component .left_side .users .fields .field_fio {
+  width: 30%;
+}
+
+.users_component .left_side .users .fields .field_birth_date {
+  width: 15%;
+}
+
+.users_component .left_side .users .fields .field_login {
+  width: 14%;
+}
+
+.users_component .left_side .users .fields .field_password {
+  width: 14%;
+}
+
+.users_component .left_side .users .fields .field_sex {
+  width: 5%;
+}
+
+.users_component .left_side .users .fields .field_married {
+  width: 15%;
+}
+
+.users_component .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 25px;
+  width: 20%;
+}
+
+.users_component .right_side select {
+  margin-top: 20px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 90%;
+  height: 45px;
+}
+
+.users_component .right_side input {
+  margin-top: 30px;
+  padding-left: 15px;
+  border-radius: 35px;
+  font-size: 18px;
+  width: 85%;
+  height: 45px;
+}
+
+.users_component .right_side button {
+  -webkit-transition: .15s ease-out;
+  transition: .15s ease-out;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  width: 265px;
+  height: 50px;
+  color: black;
+  background: #a8db35;
+}
+
+.users_component .right_side button:hover {
+  background: #b6f02e;
+}
+
+.users_component .right_side button:disabled {
+  cursor: unset;
+  background: #5f6357;
+}
+
+.users_component .right_side .remove_user {
+  background: #822323;
+}
+
+.users_component .right_side .remove_user:hover {
+  background: #c82323;
+}
+
+.users_component .right_side .remove_user:disabled {
+  cursor: unset;
+  background: #5f6357;
+}

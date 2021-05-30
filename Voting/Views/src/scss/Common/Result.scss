@@ -1,0 +1,48 @@
+@import "../Common/mixins";
+
+.result {
+    @include flex(row, flex-start, center);
+
+    font-size: 16px;
+    font-weight: 400;
+    transition: .15s ease-out;
+    cursor: pointer;
+    width: 100%;
+    min-height: 50px;
+    background: rgb(200, 200, 189);
+
+    &:not(:first-of-type) {
+        margin-top: 5px;
+    }
+
+    &:hover {
+        background: rgb(184, 184, 174);
+    }
+
+    td {
+        @include flex(row, flex-start, center);
+        
+        min-height: 50px;
+        margin-left: 15px;
+
+        &:not(:last-of-type) {
+            border-right: 5px solid rgb(220, 220, 209);
+        }
+    }
+
+    .existing_participant {
+        width: 35%;
+    }
+
+    .existing_birth_date {
+        width: 25%;
+    }
+
+    .existing_votes {
+        width: 15%;
+    }
+
+    .existing_average_mark {
+        width: 25%;
+    }
+}
